@@ -1,0 +1,28 @@
+from email.message import EmailMessage
+import ssl, smtplib
+
+
+
+sender = 'sender@gmail.com'
+password = 'app_password'
+
+receiver = 'receiver@gmail.com'
+
+subject = 'Enter the subject of your mail'
+
+body = """
+Enter the contents of your mail
+"""
+
+em = EmailMessage()
+em['From'] = sender
+em['To'] = receiver
+em['subject'] = subject
+em.set_content(body) 
+
+context = ssl.create_default_context()
+
+with smtplib.SMTP_SSL('smtp.gmail.com', 465, context = context) as smtp:
+    smtp.login(sender, password)
+    smtp.sendmail(sender, receiver, em.as_string())
+
