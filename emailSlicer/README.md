@@ -1,0 +1,1 @@
+This is the code that slices an email address into the username, domain and the extension
