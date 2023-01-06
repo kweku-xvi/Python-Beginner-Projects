@@ -4,7 +4,6 @@ print("This is a game of rock, paper & scissors. First to two wins! ")
 game_options = ['Rock', 'Paper', 'Scissors']
 
 user_wins = 0
-# computer_wins = 0
 computer_wins = 0
 
 while computer_wins != 2 and user_wins != 2:
