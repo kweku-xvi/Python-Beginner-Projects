@@ -22,7 +22,7 @@ while computer_wins != 2 and user_wins != 2:
                 pass
         if user_choice == 'Paper':
             if computer_choice == 'Scissors':
-                computer_choice += 1
+                computer_wins += 1
             elif computer_choice == 'Rock':
                 user_wins += 1
             else:
