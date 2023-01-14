@@ -9,6 +9,6 @@ def main(url):
     print(f'The response was {response.getcode()}')
 
 
-print('This is a site connectivity checker program: ')
+print('This is a site connectivity checker program')
 input_url = input('Input the URL of the site you want to check: ')
 main(input_url)
