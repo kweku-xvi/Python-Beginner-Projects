@@ -1,0 +1,1 @@
+# This code is used to count the number of letters in a word, number of words in a sentence and also the number of letters in a passage entered by the user. 
